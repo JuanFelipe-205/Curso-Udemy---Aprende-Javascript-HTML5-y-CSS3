@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Objecto Date</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+
+        var hoy = new Date();
+        var dia = hoy.getDay();
+        var diaMes = hoy.getDate();
+        var anio = hoy.getFullYear();
+        var minuto = hoy.getMinutes();
+        var segundos = hoy.getSeconds();
+        var milSegundos = hoy.getMilliseconds();
+        
+        document.write("Fecha actual: ", hoy, "<br>");
+        document.write("Fecha actual concatenada: ", dia, "/", diaMes,"/" ,anio);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 

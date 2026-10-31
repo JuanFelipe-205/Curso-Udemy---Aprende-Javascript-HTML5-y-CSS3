@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Objectos</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+        // Tipo de dato Objeto
+        var alumnos = new Object();
+        
+        alumnos.nombre = "Juan";
+        alumnos.apellido = "Vargas";
+        alumnos.edad = 20;
+        alumnos.lenguajes = ["Java", "SQL", "JavaScript"];
+        alumnos.dirreccion = {carrera : "109 A", calle :"105 b", numero : "79"};
+
+        document.write("Nombre: ", alumnos.nombre, " ", alumnos.apellido, "<br>");
+        document.write("Edad: ", alumnos.edad, "<br>");
+        document.write("Lenguajes de programacion: ", alumnos.lenguajes[0], " ",alumnos.lenguajes[1], " ", alumnos.lenguajes[2], "<br>");
+        document.write("Direccion: ", alumnos.dirreccion.carrera, " # ",alumnos.dirreccion.calle, " - ", alumnos.dirreccion.numero, "<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

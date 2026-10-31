@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Manejo de cadenas</title>
+    <link rel='stylesheet' href='main.css'>
+
+    <script>
+
+        function validacion (correo, correo1, longitud){
+         
+            if (correo == correo1) {
+                document.write("Los dos correos son iguales <br>El arroba esta en la posicion " + longitud);
+
+            } else {
+                document.write("Los dos correos NO son iguales <br>");
+            }
+        }
+
+        function validacionCaracteresEspeciales(correo){
+            var caracteres = "áéíóú";
+            var retorno = "";
+            var bandera = false;
+            
+            for (var i = 0;  i < caracteres.length; i++) {
+   
+                var c = caracteres.charAt(i);
+
+                if(correo.indexOf(c) != -1){
+                   
+                    bandera = true;
+                    retorno = c;
+                    break; 
+                }
+            }
+           
+            if(bandera){
+                document.write("<br>El correo compartido tiene un caracter especial [ " + retorno + " ]");
+            } else {
+                document.write("<br>Validacion de correo exitosa !!!")
+            }
+        }
+
+        var correo = "Ejemplo@gmail.com";
+        var correo1 = "ejemplo@gmail.com";
+        var longitud = correo.indexOf("@")
+        validacion(correo, correo1, longitud);
+        
+        correo = correo.toLowerCase;
+        correo1 = correo1.toLowerCase;
+        validacion(correo, correo1, longitud);
+
+        var correoRaro = "ejemplo@gmail.com";
+        validacionCaracteresEspeciales(correoRaro);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

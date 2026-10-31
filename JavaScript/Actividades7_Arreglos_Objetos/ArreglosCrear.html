@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Como crear arreglos </title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+
+        document.write("<hr>");
+        document.write("Actividad #1 - Array <br> <br>");
+        var dias = new Array();
+
+        dias[0] = "Lunes";
+        dias[1] = "Martes";
+        dias[2] = "Miercoles";
+        dias[3] = "Jueves";
+        dias[4] = "Viernes";
+        dias[5] = "Sabado";
+        dias[6] = "Domingo";
+
+        for (var i = 0; i < dias.length; i ++){
+            document.write("El ", dias[i], " es el dia #", i, "<br>");
+        }
+
+        document.write("<hr>");
+        document.write("Actividad #2 - [] <br> <br>");
+
+        var meses = [];
+        var contador = 0;
+        meses ["Enero"] = 1234;
+        meses ["Febrero"] = 345;
+        meses ["Marzo"] = 921;
+
+        for (alumnos in meses){
+            document.write("El mes de ", alumnos , " se inscribieron ", meses[alumnos] , " estudiantes <br>");
+            contador = contador + meses[alumnos]; 
+        }
+
+        document.write("En total hay ", contador, " estudiantes");
+
+        document.write("<hr>");
+        document.write("Actividad #3 - push <br> <br>");
+
+        var juagadores = new Array("Juan", "Javier", "Marcos");
+        juagadores.push("Antonio");
+
+        for (var i = 0; i < juagadores.length; i ++){
+            document.write(juagadores[i], "<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

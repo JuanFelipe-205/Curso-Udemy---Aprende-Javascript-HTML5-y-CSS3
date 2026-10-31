@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ciclo Do While Title</title>
+    <link rel='stylesheet' href='main.css'>
+
+    <script>
+        var clave = "";
+        var intentos = 3;
+        var mensaje;
+
+        do {
+            clave = window.prompt("Ingresa tu contraseña: ");
+
+            if(clave == "juan"){
+                mensaje = "Buenas tardes !!!";
+                break;
+            }
+
+              intentos --;
+            if (intentos >= 0){
+                window.alert("Tienes " + intentos + " intentos");
+            }
+
+            if(intentos == 0){
+                mensaje = "Alerta intruso !!!";
+                break;
+            }
+
+        } while(true);
+
+        document.write(mensaje)
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

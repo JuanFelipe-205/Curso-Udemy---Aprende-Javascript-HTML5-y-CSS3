@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+
+    <script>
+
+        var importe = 1000;
+        var impuesto = .16;
+        var total = 0;
+
+        function calculoTotal (importe, impuesto){
+            var total = importe * (1 + impuesto);
+            return total;
+        }
+
+        document.write("El valor antes de la funcion es: " + total + "<br>");
+        document.write("El valor calculado es: " + calculoTotal(importe, impuesto) + "<br>");
+        document.write("El valor despues de la funcion es: " + total + "<br>");
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

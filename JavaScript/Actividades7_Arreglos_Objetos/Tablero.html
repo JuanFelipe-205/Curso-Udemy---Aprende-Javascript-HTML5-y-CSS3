@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+        const ren = 9;
+        const col = 9;
+        const tablero = Array(ren).fill(0).map(() =>Array(col).fill(0));
+        console.table(tablero);
+
+    </script>
+</head>
+<body>
+    <table id = "tabla"> </table>
+</body>
+    <script>
+        const filas = 4;
+        const cuerpoTabla = document.getElementById("tabla");
+        cuerpoTabla.innerHTML = Array(filas).fill(null).map((_, index) => `
+        <tr>
+            <td> Fila ${index + 1}, Celda 1</td>
+            <td>Valor</td>
+        </tr>   
+        `).join("");
+
+    </script>
+</html>

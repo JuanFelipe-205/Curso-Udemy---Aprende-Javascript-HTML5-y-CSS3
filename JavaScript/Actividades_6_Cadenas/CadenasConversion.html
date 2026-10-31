@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+
+        var num1 = 6;
+        var num2 = 6;
+        document.write(num1 + num2 + "<br>");
+
+        var num1 = "6";
+        var num2 = "6";
+        document.write(num1 + num2 + "<br>");
+
+        var num1 = 6;
+        var num2 = "6";
+        document.write(num1 + num2 + "<br>");
+        
+        var num1 = 6;
+        var num2 = Number("6");
+        document.write(num1 + num2 + "<br>");
+
+        var num1 = 6;
+        var num2 = Number("six");
+        var total = num1 + num2;
+        document.write(num1 + num2 + "<br>");
+
+        if(isNaN(total)){
+            document.write("Error: el dato no es numerico");
+        }else {
+            document.write("Todo Ok")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

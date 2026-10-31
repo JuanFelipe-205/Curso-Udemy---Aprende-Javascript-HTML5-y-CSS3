@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM -  Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var miLi = document.querySelectorAll("li");
+            console.log("# de elementos tipo lista: ", miLi.length);
+
+            var miDom = document.getElementById("dom");
+            console.log("El tipo de nodo es DOM: ", miDom.nodeType);
+            
+            miDom.setAttribute("class", "rojo");
+
+        }
+    </script>
+
+    <style>
+        .rojo{color:red;}
+    </style>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul id="dom">
+        <li>Document</li>
+        <li>Object</li>
+        <li>Model</li>
+    </ul>
+</body>
+</html>

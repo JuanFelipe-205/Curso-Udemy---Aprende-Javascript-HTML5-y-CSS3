@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM -  Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var varRojo = document.getElementsByClassName("rojo");
+            console.log("Cantidad de elementos en rojo: " + varRojo.length);
+
+            for(var i = 0; i < varRojo.length; i++){
+                console.log("El contenido del nodos es: ", varRojo[i].innerHTML)
+            }
+        }
+    </script>
+
+    <style>
+        .rojo{
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul>
+        <li class = "rojo">Document</li>
+        <li>Object</li>
+        <li class = "rojo">Model</li>
+    </ul>
+</body>
+</html>

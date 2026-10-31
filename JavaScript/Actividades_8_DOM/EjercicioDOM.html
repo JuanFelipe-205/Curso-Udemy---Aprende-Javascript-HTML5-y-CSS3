@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM -  Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul id = "dom">
+        <li>Document</li>
+        <li>Object</li>
+        <li>Model</li>
+    </ul>
+</body>
+<script>
+    var listLi = document.getElementsByTagName("li");
+    document.write("El numero de elementos de la lista son: ", listLi.length, "<br>");
+    
+    var listDom = document.getElementById("dom");
+    document.write("El numero de nodos de la lsita son: ", listDom.childNodes.length , "<br>");
+
+    // Contenido de un nodo
+    document.write("El contenido del nodos es: ", listDom.innerHTML, "<br>");
+
+    // Tipo de nodo
+    document.write("El tipo de nodos es: ", listDom.nodeType, "<br>");
+
+</script>
+</html>

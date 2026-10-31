@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM -  Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var varRojo = document.querySelectorAll(".rojo");
+            var varVerde = document.querySelectorAll(".verde");
+            var varAmarillo = document.querySelectorAll("#amarillo");
+            var varAzul = document.querySelectorAll("h1");
+            
+            console.log("Cantidad de elemntos rojos: ", varRojo);
+            console.log("Cantidad de elemntos verde: ", varVerde);
+            console.log("Cantidad de elemntos amarrillo: ", varAmarillo);
+            console.log("Cantidad de elemntos azul: ", varAzul);
+
+        }
+    </script>
+
+    <style>
+        h1{color : blue;}
+        .rojo{color:red;}
+        .verde{color:green;}
+        #amarillo{color: yellow;}
+    </style>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p class="rojo">Las siglas DOM significan: </p>
+    <ul>
+        <li class = "verde">Document</li>
+        <li class = "amarillo">Object</li>
+        <li class = "verde">Model</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM - Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var textos = new Array();
+            textos.push("Afrodita nació de la espuma del mar ... ");
+            textos.push("Una pelota de golf puede ser más letal que una bala ... ");
+            textos.push("Las abejas tienen emociones ... ");
+            textos.push("El arte es bueno para la salud ... ");
+            textos.push("Las papas disminuyen la presion arterial ... ");
+            textos.push("JavaScript es el lenguaje más utilizado en el mundo ... ");
+
+            var num = Math.floor(Math.random() * textos.length);
+            console.log("Numero random: ", num);
+
+            // 1) Crear nodo
+            var titulo = document.createElement("h1");
+            var texto = document.createElement("p");
+
+            // 2) Poblar nodo
+            titulo.innerHTML = "¿Saberias que ...?";
+            texto.innerHTML = textos[num];
+
+            // 3) Añadir a la lista de visulizacion del documento
+            document.getElementById("sabias").appendChild(titulo);
+            document.getElementById("sabias").appendChild(texto);
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id = "sabias"></div>
+</body>
+</html>

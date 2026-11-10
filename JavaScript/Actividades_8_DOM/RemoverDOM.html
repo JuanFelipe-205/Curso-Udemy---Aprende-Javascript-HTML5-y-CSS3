@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM - Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var medio = document.getElementById("medio");
+            var ul = document.querySelector("ul");
+            var ant = ul.removeChild(medio);
+            console.log(ant.nodeName);
+        }
+    </script>
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul>
+        <li>Document</li>
+        <li id = "medio">Object</li>
+        <li>Model</li>
+    </ul>
+</body>
+</html>

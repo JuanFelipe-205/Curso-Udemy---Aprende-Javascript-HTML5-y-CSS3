@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM - Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var listUl = document.querySelector("ul");
+            var primerNodo = listUl.firstChild;
+            var ultimoNodo = listUl.lastChild;
+
+            while(primerNodo.nodeName == "#text") {
+                primerNodo = primerNodo.nextSibling;
+            }
+
+            
+            while(ultimoNodo.nodeName == "#text") {
+                ultimoNodo = ultimoNodo.previousSibling;
+            }
+
+            primerNodo.setAttribute("class", "rojo");
+            ultimoNodo.setAttribute("class", "verde");
+        }
+    </script>
+    <style>
+        .rojo{
+            color: red;
+            font-size: 2em;
+        }
+        .verde{
+            color: green;
+            font-size: 2em;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul>
+        <li>Document</li>
+        <li>Object</li>
+        <li>Model</li>
+    </ul>
+</body>
+</html>

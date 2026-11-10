@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>BOM | Ventanas</title>
+    <link rel='stylesheet' href='main.css'>
+    <script>
+        var nuevaVentana;
+
+        function crearVentana(){
+            nuevaVentana = window.open("", "Nueva ventana", "status, height=200, width=300");
+        }
+
+        function escribe(){
+            if(nuevaVentana.close){
+                crearVentana();
+            }
+
+            nuevaVentana.focus();
+            var contenido = "<html><head><title>Nueva ventana</title></head>";
+            contenido += "<body color='coral'><h1>Hola desde JavaScript</h1></body></html>"
+            nuevaVentana.window.status = "Bienvenido";
+            nuevaVentana.document.write(contenido);
+            nuevaVentana.document.closed();
+
+        }
+
+    </script>
+</head>
+<body onload="crearVentana()">
+    <input type = "submit" value ="Abrir ventana" onclick="escribe()">
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM - Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            
+            //Recuperar informacion del nodo
+            var nodo1 = document.querySelector(".rojo").innerHTML;
+            console.log("El valor del nodo rojo es: ", nodo1);
+           
+            //Modificar informacion del nodo
+            var nodo2 = document.querySelector(".verde").innerHTML;
+            document.querySelector(".verde").innerHTML = "<b>" + nodo2 + "<b>";
+            
+            // Eliminar informacion del nodo
+            var nodo3 = document.querySelector(".azul").innerHTML;
+            document.querySelector(".azul").innerHTML = "";
+
+        }
+    </script>
+
+    <style>
+       .rojo{color:red;}
+       .verde{color : green;}
+       .azul{color : blue;}
+    </style>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul>
+        <li class="rojo">Document</li>
+        <li class="verde">Object</li>
+        <li class="azul">Model</li>
+    </ul>
+</body>
+</html>

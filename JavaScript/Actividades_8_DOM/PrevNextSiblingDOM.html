@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DOM - Document Object Model</title>
+    <link rel='stylesheet' href='main.css'>
+    
+    <script>
+        window.onload = function(){
+            var medio = document.getElementById("medio");
+
+            do{
+                
+                console.log("Nombre del nodo: ", medio.nodeName, " Tipo de nodo: ", medio.nodeType);
+                
+                // Busca el siguiente elemento
+                medio = medio.nextElementSibling;
+                
+                // Busca el siguiente valor 
+                // medio = medio.nextSibling;
+
+            }while(medio);
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Esto es una pagina HTML</h1>
+    <p>Las siglas DOM significan: </p>
+    <ul>
+        <li>Document</li>
+        <li id="medio">Object</li>
+        Hola
+        <li>Model</li>
+    </ul>
+</body>
+</html>
